@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <h1>Your list of <span data-th-text="${number}"></span> random numbers</h1>
+
+    <span data-th-each="image : ${images}">
+        <img data-th-src="@{${'/images/' + image}}" height="320" width="260" >
+    </span>
+
+    <p></p><a href="/">Back</a></p>
+</body>
+</html>

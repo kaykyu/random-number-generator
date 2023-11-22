@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <h1>How many numbers do you wish to generate?</h1>
+    <form data-th-action="@{/generate}" method="GET">
+        <tr>
+            <td><input type="text" name="num" required></td>
+            <td><button type="submit">Generate</button></td>
+        </tr>
+
+    </form>
+</body>
+</html>
