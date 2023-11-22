@@ -13,12 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class GenerateRandController {
-
-    private int num = 0;
     
     @GetMapping(path={"/", "/index.html"})
     public String showRandomForm(Model model) {
-        model.addAttribute("generateObj", num);
         return "generate";
     }
 
